@@ -2,6 +2,7 @@
 ### Generic Smart Contract which can be utilized to build Smart Contract!!!
 
 ---
+**[NEP5 Token Methods](http://docs.neoparticle.com)**
 **EF Methods:**<br /><br />
 
 >**ef-create**<br />
