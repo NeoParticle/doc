@@ -14,56 +14,56 @@ public static void Main ()
      AnotherContract ((byte[])"totalSupply");
 }
 ```
-**NEP5 Token Methods:**
+**NEP5 Token Methods:**<br /><br />
 
-* *deploy*
-  *This method is invoked first time by Admin.
+* *deploy*<br />
+  &nbsp;*This method is invoked first time by Admin.<br /><br />
   
-* *mintTokens* 
-  *Any one can transfer NEO to the contract address and invoke this method to generate NEP TOKENS.
+* *mintTokens* <br />
+  &nbsp;*Any one can transfer NEO to the contract address and invoke this method to generate NEP TOKENS.<br />
   
-* *totalSupply* 
-  *Will provide the total amount of tokens minted.
+* *totalSupply* <br />
+  &nbsp;*Will provide the total amount of tokens minted.<br />
   
-* *name* 
-  *Will provide the Name of the Token (NEO Particle).
+* *name* <br />
+  &nbsp;*Will provide the Name of the Token (NEO Particle).<br /><br />
   
-* *symbol* 
-  *Will provide the symbol of the Token (NEP).
+* *symbol* <br />
+  &nbsp;*Will provide the symbol of the Token (NEP).<br /><br />
   
-* *transfer* 
-  *Used to transfer NEP token's from one account another.
-      *Parameter(byte[] fromScriptHash, byte[] toScriptHash, BigInteger value).
-        *byte[] fromScriptHash => Logged in user account contract script hash.
-        *byte[] toScriptHash => Contract script hash of the account to which tokens has to be transferred.
-        *BigInteger value => Number of tokens to be transferred, upto 8 decimals accepted.
+* *transfer* <br />
+  &nbsp;*Used to transfer NEP token's from one account another.<br />
+      &nbsp;&nbsp;*Parameter(byte[] fromScriptHash, byte[] toScriptHash, BigInteger value).<br />
+        &nbsp;&nbsp;&nbsp;*byte[] fromScriptHash => Logged in user account contract script hash.<br />
+        &nbsp;&nbsp;&nbsp;*byte[] toScriptHash => Contract script hash of the account to which tokens has to be transferred.<br />
+        &nbsp;&nbsp;&nbsp;*BigInteger value => Number of tokens to be transferred, upto 8 decimals accepted.<br /><br />
         
-* *balanceOf*
-  *To know the balance of the logged in account.
-      *Parameter(byte[] scriptHash)
-        *byte[] scriptHash => Logged in user account contract script hash.
+* *balanceOf*<br />
+  &nbsp;*To know the balance of the logged in account.<br />
+     &nbsp;&nbsp; *Parameter(byte[] scriptHash)<br />
+        &nbsp;&nbsp;&nbsp;*byte[] scriptHash => Logged in user account contract script hash.<br /><br />
         
-* *decimals*
-  *Will provide the total decimal for the Token (8).
+* *decimals*<br />
+  &nbsp;*Will provide the total decimal for the Token (8).<br /><br />
   
-* *transferFrom*
-  *This allows user to transfer tokens from another account. Before using this option the user from whose account the token are going to be transferred has to approve the logged in user to transfer certain amount of token from his account. ("approve" method is used for this purpose)
-      *Parameter(byte[] originatorScriptHash, byte[] fromScriptHash, byte[] toScriptHash, BigInteger value)
-        *byte[] originatorScriptHash => Logged in user account contract script hash, account used for doing the transfer between two users.
-        *byte[] fromScriptHash => Script hash of the account from which the tokens are going to be transferred.
-        *byte[] toScriptHash => Script hash of the account to which the tokens are being transferred.
-        *BigInteger value => Numbet of tokens being transferred.
+* *transferFrom*<br />
+  &nbsp;*This allows user to transfer tokens from another account. Before using this option the user from whose account the token are going to be transferred has to approve the logged in user to transfer certain amount of token from his account. ("approve" method is used for this purpose)<br />
+      &nbsp;&nbsp;*Parameter(byte[] originatorScriptHash, byte[] fromScriptHash, byte[] toScriptHash, BigInteger value)<br />
+        &nbsp;&nbsp;&nbsp;*byte[] originatorScriptHash => Logged in user account contract script hash, account used for doing the transfer between two users.<br />
+        &nbsp;&nbsp;&nbsp;*byte[] fromScriptHash => Script hash of the account from which the tokens are going to be transferred.<br />
+        &nbsp;&nbsp;&nbsp;*byte[] toScriptHash => Script hash of the account to which the tokens are being transferred.<br />
+        &nbsp;&nbsp;&nbsp;*BigInteger value => Numbet of tokens being transferred.<br /><br />
         
-* *approve*
-  *This method is used to set or allow another user to access the logged in users troken. Setting permission to transfer.
-      *Parameter(byte[] originatorScriptHash, byte[] toScriptHash, byte[] value)
-        *byte[] originatorScriptHash => Script hash of the logged in account, who is going to allow access to another user to transfer token from his account.
-        *byte[] toScriptHash => Script hash of the account for whom the permission to transfer is set.
-        *byte[] value => Total number of tokens which can be transferred from the logged in user account.
+* *approve*<br />
+  &nbsp;*This method is used to set or allow another user to access the logged in users troken. Setting permission to transfer.<br />
+      &nbsp;&nbsp;*Parameter(byte[] originatorScriptHash, byte[] toScriptHash, byte[] value)<br />
+        &nbsp;&nbsp;&nbsp;*byte[] originatorScriptHash => Script hash of the logged in account, who is going to allow access to another user to transfer token from his account.<br />
+        &nbsp;&nbsp;&nbsp;*byte[] toScriptHash => Script hash of the account for whom the permission to transfer is set.<br />
+        &nbsp;&nbsp;&nbsp;*byte[] value => Total number of tokens which can be transferred from the logged in user account.<br /><br />
         
-* *allowance*
-  *This method is used to check the amount allowed to transfer from another account.
-      *Parameter(byte[] fromScriptHash, byte[] toScriptHash)
-        *byte[] fromScriptHash => Script hash of the account who has allowed the logged in user to transfer from his account.
-        *byte[] toScriptHash => Script hash of the logged in account, who wish check the balance of the allowed amount.
+* *allowance*<br />
+  &nbsp;*This method is used to check the amount allowed to transfer from another account.<br />
+      &nbsp;&nbsp;*Parameter(byte[] fromScriptHash, byte[] toScriptHash)<br />
+        &nbsp;&nbsp;&nbsp;*byte[] fromScriptHash => Script hash of the account who has allowed the logged in user to transfer from his account.<br />
+        &nbsp;&nbsp;&nbsp;*byte[] toScriptHash => Script hash of the logged in account, who wish check the balance of the allowed amount.<br />
 ---
