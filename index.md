@@ -1,7 +1,7 @@
 # Neo Particle {NEOP}
 ### Generic Smart Contract which can be utilized to build Smart Contract!!!
-** NEP Tokens are just used to pay for the promised service **
-** When moving to Mainnet admin account will be removed and users can convert from NEO to NEP and NEP to NEO **
+#### NEP Tokens are just used to pay for the promised service
+##### When moving to Mainnet admin account will be removed and users can convert from NEO to NEP and NEP to NEO 
 ---
 **Direction of Use:**
 ```
