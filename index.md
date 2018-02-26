@@ -3,7 +3,7 @@
 #### NEP Tokens are just used to pay for the promised service
 >**Note:**  When moving to Mainnet admin account will be removed and users can convert from NEO to NEP and NEP to NEO 
 ---
-**Direction of Use:**
+>**Direction of Use:**
 
 	
 
