@@ -15,7 +15,7 @@
     	      //To check total Supply
     	     AnotherContract ((byte[])"totalSupply");
     	}
-
+**EF Methods(http://docs.neoparticle.com/EF.html)**
 **NEP5 Token Methods:**<br /><br />
 
 >**deploy**<br />
