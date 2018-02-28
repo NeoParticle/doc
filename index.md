@@ -3,9 +3,7 @@
 #### NEP Tokens are just used to pay for the promised service
 >**Note:**  When moving to Mainnet admin account will be removed and users can convert from NEO to NEP and NEP to NEO 
 ---
->**Direction of Use:**
-
-	
+>**Direction of Use:**	
 
 	    [AppCall("0xb693f49e295e3b72db4fe2f589756b9527266b3f")] // ScriptHash
     	public static extern int AnotherContract (byte[] activityType, params object[] args);
@@ -15,6 +13,8 @@
     	      //To check total Supply
     	     AnotherContract ((byte[])"totalSupply");
     	}
+	 
+	
 **[EF Methods](http://docs.neoparticle.com/EF.html)**<br /><br />
 **NEP5 Token Methods:**<br /><br />
 
